@@ -3,6 +3,17 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Ahorcado!</h1>
+    <p>El juego consiste en arriesgar una letra para adivinar la palabra escondida. ¿Seras capaz de hacerlo?</p>
 </div>
+ <h2 id="intentos">Intentos restantes: 10<h2>
+<div id="palabra">
+    @for(int i = 0; i < ViewBag.PalabraSecreta.Lenght; i++)
+    {
+        <p>_ </p>
+    }
+</div>
+<input type="text" id="letra">
+<input type="hidden" id="palabraSecreta">
+<input type="button" id="boton" onclick=ArriesgarLetra()>
+<p id="mensaje"></p>
