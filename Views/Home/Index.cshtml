@@ -10,10 +10,11 @@
 <div id="palabra">
     @for(int i = 0; i < ViewBag.PalabraSecreta.Lenght; i++)
     {
-        <p>_ </p>
+        @Html.Raw('_ ');
     }
 </div>
 <input type="text" id="letra">
-<input type="hidden" id="palabraSecreta">
+<input type="hidden" id="palabraSecreta" value="@ViewBag.PalabraSecreta">
 <input type="button" id="boton" onclick=ArriesgarLetra()>
 <p id="mensaje"></p>
+

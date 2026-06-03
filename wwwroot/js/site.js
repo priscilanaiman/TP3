@@ -1,4 +1,21 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function ArriesgarLetra()
+{
+let palabraSecreta = document.getElementById(palabraSecreta).Value;
+let palabra = document.getElementById(palabra).Value;
+let letra = document.getElementById(letra).Value;
+let intentos = document.getElementById(intentos).Value;
 
-// Write your JavaScript code.
+let i = 0;
+while(i < palabraSecreta.Lenght && palabraSecreta[i] != letra)
+    {
+        i++
+    }
+   if (i < palabraSecreta.Lenght)
+    {
+    
+    }
+   else
+    {
+        intentos.innerHTML -= 1;
+    }
+}
