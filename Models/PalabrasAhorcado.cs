@@ -1,20 +1,8 @@
 public class PalabrasAhorcado
 {
-    private List<string> palabras;
+    private BD DataBase = new BD();
+    private List<string> palabras = DataBase.ListaPalabras();
 
-    public PalabrasAhorcado()
-    {
-        this.palabras.Add("ELEFANTE");
-        this.palabras.Add("SINFONICO");
-        this.palabras.Add("VENTANAL");
-        this.palabras.Add("DESTRUCCION");
-        this.palabras.Add("HEGEMONIA");
-        this.palabras.Add("SIMULADORES");
-        this.palabras.Add("ELECTRODOMESTICO");
-        this.palabras.Add("INTOXICACION");
-        this.palabras.Add("VENENOSO");
-        this.palabras.Add("ACONDICIONADOR");
-    } 
     public string ObtenerPalabra()
     {
         Random random = new Random();

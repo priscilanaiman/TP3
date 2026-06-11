@@ -6,15 +6,10 @@
     <h1 class="display-4">Ahorcado!</h1>
     <p>El juego consiste en arriesgar una letra para adivinar la palabra escondida. ¿Seras capaz de hacerlo?</p>
 </div>
- <h2 id="intentos">Intentos restantes: 10<h2>
-<div id="palabra">
-    @for(int i = 0; i < ViewBag.PalabraSecreta.Lenght; i++)
-    {
-        @Html.Raw('_ ');
-    }
-</div>
+ <h2 id="intentos"><h2>
+<div id="palabra"></div>
 <input type="text" id="letra">
 <input type="hidden" id="palabraSecreta" value="@ViewBag.PalabraSecreta">
-<input type="button" id="boton" onclick=ArriesgarLetra()>
+<input type="button" id="boton" onclick=ArriesgarLetra() value="Arriesgar letra">
 <p id="mensaje"></p>
 
