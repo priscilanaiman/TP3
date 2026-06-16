@@ -1,8 +1,14 @@
 public class PalabrasAhorcado
 {
-    private BD DataBase = new BD();
-    private List<string> palabras = DataBase.ListaPalabras();
+    private BD DataBase;
+    private List<string> palabras;
 
+    public PalabrasAhorcado()
+    {
+        DataBase = new BD();
+        palabras = DataBase.ListaPalabras();
+    }
+    
     public string ObtenerPalabra()
     {
         Random random = new Random();

@@ -3,8 +3,13 @@ using Dapper;
 
 public class BD
 {
-    private string _connectionString = @"Server=localhost; DataBase = Ahorcado; Integrated Security=True; TrustServerCertificate=True;";
+    private string _connectionString;
    
+    public BD()
+    {
+        _connectionString = @"Server=localhost; DataBase = Ahorcado; Integrated Security=True; TrustServerCertificate=True;";
+    }
+
     public List<string> ListaPalabras()
     {
         List<string> Palabras = new List<string>();
